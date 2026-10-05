@@ -1,0 +1,6 @@
+Calculadora<
+    img<
+        favicon.ico
+    app.js
+    index.html
+    style.css

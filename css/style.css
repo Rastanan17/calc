@@ -1,0 +1,265 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --fondo:#111827;
+    --panel:#1f2937;
+    --boton:#374151;
+    --funcion:#9ca3af;
+    --operador:#2563eb;
+    --texto:#ffffff;
+    --secundario:#9ca3af;
+    --borde:#4b5563;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--fondo);
+    color:var(--texto);
+}
+
+.calculadora{
+    width:min(100%,380px);
+    overflow:hidden;
+    border:1px solid var(--borde);
+    border-radius:24px;
+    background:var(--panel);
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+}
+
+.encabezado{
+    display:flex;
+    flex-direction:column;
+    padding:18px 20px 10px;
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.marca{
+    font-size:20px;
+    font-weight:700;
+    color:var(--texto);
+}
+
+.studio{
+    margin-top:3px;
+    font-size:10px;
+    color:var(--secundario);
+    letter-spacing:1px;
+}
+
+.pantalla{
+    min-height:135px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:flex-end;
+    padding:20px;
+    background:#0f172a;
+}
+
+#operacion{
+    width:100%;
+    min-height:24px;
+    margin-bottom:8px;
+    overflow:hidden;
+    text-align:right;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:16px;
+    color:var(--secundario);
+}
+
+#resultado{
+    width:100%;
+    overflow:hidden;
+    text-align:right;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:48px;
+    font-weight:300;
+    color:var(--texto);
+}
+
+.teclado{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    padding:15px;
+    background:var(--panel);
+}
+
+button{
+    height:70px;
+    border:1px solid transparent;
+    border-radius:18px;
+    font-size:24px;
+    font-weight:500;
+    color:var(--texto);
+    background:var(--boton);
+    cursor:pointer;
+    transition:
+        transform .08s,
+        filter .15s,
+        background .15s,
+        border-color .15s;
+    user-select:none;
+}
+
+button:hover{
+    filter:brightness(1.15);
+}
+
+button:active{
+    transform:scale(.94);
+}
+
+.funcion{
+    color:#111827;
+    background:var(--funcion);
+}
+
+.funcion:hover{
+    background:#b0b5bd;
+}
+
+.operador,
+.igual{
+    color:var(--texto);
+    background:var(--operador);
+}
+
+.operador:hover,
+.igual:hover{
+    filter:brightness(1.15);
+}
+
+.igual{
+    font-size:28px;
+}
+
+.cero{
+    grid-column:span 2;
+}
+
+footer{
+    margin-top:16px;
+    font-size:10px;
+    color:#6b7280;
+    letter-spacing:.7px;
+    text-align:center;
+}
+
+.memoria{
+    grid-column:1 / -1;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.memoria button{
+    height:50px;
+    font-size:16px;
+}
+
+#memoriaIndicador{
+    width:100%;
+    min-height:18px;
+    text-align:left;
+    font-size:13px;
+    font-weight:700;
+    color:var(--secundario);
+}
+.historial{
+    padding:0 15px 15px;
+    background:var(--panel);
+}
+
+.historial-titulo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+    font-size:13px;
+    color:var(--secundario);
+}
+
+.historial-titulo button{
+    width:auto;
+    height:32px;
+    padding:0 10px;
+    border-radius:8px;
+    font-size:11px;
+}
+
+#historialLista{
+    max-height:150px;
+    overflow-y:auto;
+}
+
+.historial-item{
+    padding:8px 10px;
+    margin-top:5px;
+    border-radius:8px;
+    background:rgba(255,255,255,.04);
+    text-align:right;
+}
+
+.historial-operacion{
+    font-size:12px;
+    color:var(--secundario);
+}
+
+.historial-resultado{
+    margin-top:2px;
+    font-size:18px;
+    color:var(--texto);
+}
+
+@media(max-width:400px){
+
+    body{
+        padding:10px;
+    }
+
+    .calculadora{
+        border-radius:20px;
+    }
+
+    .teclado{
+        gap:8px;
+        padding:12px;
+    }
+
+    button{
+        height:64px;
+    }
+
+    #resultado{
+        font-size:42px;
+    }
+}
+
+@media(max-height:700px){
+
+    .pantalla{
+        min-height:105px;
+        padding:15px;
+    }
+
+    button{
+        height:58px;
+    }
+
+    .encabezado{
+        padding:12px 18px 9px;
+    }
+}

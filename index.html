@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111827">
+    <title>2+2=3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/larenga.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <main class="calculadora">
+
+        <header class="encabezado">
+            <span class="marca">Rastanan</span>
+            <span class="studio">by ArcaPixelesStudio</span>
+            <div class="selector-tema">
+                <button id="temaBtn" type="button">🎸 TEMA</button>
+
+                <div id="temasMenu" class="temas-menu">
+                    <button type="button" data-tema="larenga">La Renga</button>
+                    <button type="button" data-tema="base">Clásico</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="pantalla">
+            <div id="memoriaIndicador"></div>
+            <div id="operacion"></div>
+            <div id="resultado">0</div>
+        </section>
+
+        <section class="historial">
+            <div class="historial-titulo">
+                <span>Historial</span>
+                <button id="limpiarHistorial" type="button">Limpiar</button>
+            </div>
+
+            <div id="historialLista"></div>
+        </section>
+
+        <section class="teclado">
+
+            <div class="memoria">
+                <button class="funcion" data-action="memory-clear">MC</button>
+                <button class="funcion" data-action="memory-recall">MR</button>
+                <button class="funcion" data-action="memory-add">M+</button>
+                <button class="funcion" data-action="memory-subtract">M−</button>
+            </div>
+
+            <button class="funcion" data-action="clear">AC</button>
+            <button class="funcion" data-action="delete">⌫</button>
+            <button class="funcion" data-action="sign">+/-</button>
+            <button class="operador" data-action="operator" data-value="/">÷</button>
+
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button class="operador" data-action="operator" data-value="*">×</button>
+
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button class="operador" data-action="operator" data-value="-">−</button>
+
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button class="operador" data-action="operator" data-value="+">+</button>
+
+            <button class="funcion" data-action="percent">%</button>
+            <button class="cero" data-number="0">0</button>
+            <button data-action="decimal">.</button>
+
+            <button class="igual" data-action="equals">=</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>Rastanan by ArcaPixelesStudio</span>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
