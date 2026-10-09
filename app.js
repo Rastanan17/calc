@@ -472,7 +472,6 @@
     // MEMORIA
     // ========================================
 
-    
     function memoriaAgregar() {
 
         if (actual === "Error") {
@@ -489,7 +488,6 @@
         actualizarPantalla();
 
     }
-
 
     function memoriaRestar() {
 
@@ -508,7 +506,6 @@
 
     }
 
-
     function memoriaRecuperar() {
 
         actual = String(memoria);
@@ -517,7 +514,6 @@
         actualizarPantalla();
 
     }
-
 
     function memoriaLimpiar() {
 
@@ -628,7 +624,10 @@
 
         document.body.classList.remove(
             "tema-larenga",
-            "tema-clasico"
+            "tema-clasico",
+            "tema-metallica",
+            "tema-lospiojos",
+            "tema-gorillaz"
         );
 
         if (tema !== "base") {

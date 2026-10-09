@@ -1,0 +1,170 @@
+/* ========================================
+METALLICA - RASTANAN
+Tipografía: Metal Mania
+Estética: heavy metal / acero / negro
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+/* PALETA METALLICA */
+
+body.tema-metallica {
+--fondo: #080808;
+--panel: #111111;
+--boton: #1c1c1c;
+--funcion: #d5d5d5;
+--operador: #777777;
+--texto: #f5f5f5;
+--secundario: #a0a0a0;
+--borde: #777777;
+}
+
+/* TIPOGRAFÍA GENERAL */
+
+body.tema-metallica,
+body.tema-metallica button,
+body.tema-metallica input,
+body.tema-metallica select,
+body.tema-metallica .marca,
+body.tema-metallica .studio,
+body.tema-metallica .pantalla,
+body.tema-metallica .historial,
+body.tema-metallica .operacion,
+body.tema-metallica .resultado,
+body.tema-metallica .memoria-indicador,
+body.tema-metallica .historial-contenido {
+font-family: 'Metal Mania', Impact, 'Arial Black', sans-serif;
+}
+
+/* CUERPO DE LA CALCULADORA */
+
+body.tema-metallica .calculadora {
+border: 2px solid #777;
+border-radius: 5px;
+box-shadow:
+0 0 0 1px #000,
+0 15px 45px rgba(0, 0, 0, .9),
+0 0 18px rgba(190, 190, 190, .12);
+}
+
+/* PANTALLA */
+
+body.tema-metallica .pantalla {
+background: #050505;
+border-bottom: 2px solid #888;
+}
+
+/* MARCA RASTANAN */
+
+body.tema-metallica .marca {
+font-size: 30px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #f5f5f5;
+text-shadow:
+2px 2px 0 #555,
+4px 4px 0 #111,
+0 0 12px rgba(255, 255, 255, .18);
+}
+
+/* ARCAPIXELESSTUDIO */
+
+body.tema-metallica .studio {
+color: #aaa;
+font-weight: 400;
+letter-spacing: 1px;
+}
+
+/* RESULTADO NUMÉRICO */
+
+body.tema-metallica .resultado {
+font-weight: 400;
+letter-spacing: 1px;
+color: #fff;
+overflow-wrap: anywhere;
+}
+
+/* OPERACIÓN ACTUAL */
+
+body.tema-metallica .operacion {
+font-weight: 400;
+color: #aaa;
+letter-spacing: .5px;
+}
+
+/* BOTONES */
+
+body.tema-metallica button {
+border: 1px solid #454545;
+border-radius: 5px;
+font-weight: 400;
+letter-spacing: .5px;
+transition:
+background .15s ease,
+border-color .15s ease,
+box-shadow .15s ease;
+}
+
+/* BOTONES NUMÉRICOS */
+
+body.tema-metallica .teclado button {
+background: linear-gradient(145deg, #242424, #121212);
+color: #f5f5f5;
+}
+
+/* BOTONES DE FUNCIÓN */
+
+body.tema-metallica .funcion {
+background: #c9c9c9;
+color: #111;
+border-color: #eee;
+}
+
+/* OPERADORES Y SIGNO IGUAL */
+
+body.tema-metallica .operador,
+body.tema-metallica .igual {
+background: linear-gradient(145deg, #858585, #454545);
+color: #fff;
+border-color: #aaa;
+}
+
+/* EFECTOS AL PASAR EL CURSOR */
+
+body.tema-metallica .teclado button:hover {
+border-color: #bbb;
+box-shadow: 0 0 8px rgba(220, 220, 220, .2);
+}
+
+body.tema-metallica .operador:hover,
+body.tema-metallica .igual:hover {
+background: linear-gradient(145deg, #aaa, #606060);
+border-color: #fff;
+box-shadow: 0 0 12px rgba(220, 220, 220, .35);
+}
+
+/* MEMORIA E HISTORIAL */
+
+body.tema-metallica .memoria-indicador,
+body.tema-metallica .historial,
+body.tema-metallica .historial-contenido {
+color: #ddd;
+font-weight: 400;
+}
+
+/* SELECTOR DE TEMAS */
+
+body.tema-metallica .temas-menu {
+background: #111;
+border: 1px solid #666;
+}
+
+body.tema-metallica .temas-menu button {
+background: #181818;
+color: #eee;
+}
+
+body.tema-metallica .temas-menu button:hover {
+background: #444;
+}

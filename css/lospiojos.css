@@ -1,0 +1,167 @@
+/* ========================================
+LOS PIOJOS - RASTANAN
+Tipografía: Special Elite
+Estética: rock urbano / afiche gastado
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* PALETA */
+
+body.tema-lospiojos {
+--fondo: #17110f;
+--panel: #251b17;
+--boton: #352720;
+--funcion: #e8d8b8;
+--operador: #8f302c;
+--texto: #f2e6d0;
+--secundario: #b9a58c;
+--borde: #8f302c;
+}
+
+/* TIPOGRAFÍA GENERAL */
+
+body.tema-lospiojos,
+body.tema-lospiojos button,
+body.tema-lospiojos input,
+body.tema-lospiojos select,
+body.tema-lospiojos .marca,
+body.tema-lospiojos .studio,
+body.tema-lospiojos .pantalla,
+body.tema-lospiojos .historial,
+body.tema-lospiojos .operacion,
+body.tema-lospiojos .resultado,
+body.tema-lospiojos .memoria-indicador,
+body.tema-lospiojos .historial-contenido {
+font-family: 'Special Elite', 'Courier New', monospace;
+}
+
+/* CUERPO */
+
+body.tema-lospiojos .calculadora {
+border: 2px solid #8f302c;
+border-radius: 4px;
+box-shadow:
+0 0 0 1px #080605,
+0 16px 40px rgba(0, 0, 0, .75),
+0 0 18px rgba(143, 48, 44, .15);
+}
+
+/* PANTALLA */
+
+body.tema-lospiojos .pantalla {
+background: #110d0b;
+border-bottom: 2px solid #8f302c;
+}
+
+/* MARCA */
+
+body.tema-lospiojos .marca {
+font-size: 27px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #f2e6d0;
+text-shadow:
+2px 2px 0 #090706,
+3px 3px 0 #8f302c;
+}
+
+/* ESTUDIO */
+
+body.tema-lospiojos .studio {
+color: #c47a5b;
+font-weight: 400;
+}
+
+/* RESULTADO */
+
+body.tema-lospiojos .resultado {
+color: #f7ead3;
+font-weight: 400;
+letter-spacing: 1px;
+overflow-wrap: anywhere;
+}
+
+/* OPERACIÓN */
+
+body.tema-lospiojos .operacion {
+color: #b9a58c;
+font-weight: 400;
+letter-spacing: .5px;
+}
+
+/* BOTONES */
+
+body.tema-lospiojos button {
+border: 1px solid #594238;
+border-radius: 4px;
+font-weight: 400;
+transition:
+background .15s ease,
+border-color .15s ease,
+box-shadow .15s ease;
+}
+
+/* NÚMEROS */
+
+body.tema-lospiojos .teclado button {
+background: linear-gradient(145deg, #3b2c23, #261c17);
+color: #f2e6d0;
+}
+
+/* FUNCIONES */
+
+body.tema-lospiojos .funcion {
+background: #e8d8b8;
+color: #251b17;
+border-color: #cbb795;
+}
+
+/* OPERADORES E IGUAL */
+
+body.tema-lospiojos .operador,
+body.tema-lospiojos .igual {
+background: #8f302c;
+color: #fff0dd;
+border-color: #b34a40;
+}
+
+/* INTERACCIÓN */
+
+body.tema-lospiojos .teclado button:hover {
+border-color: #c7a88c;
+box-shadow: 0 0 8px rgba(199, 168, 140, .15);
+}
+
+body.tema-lospiojos .operador:hover,
+body.tema-lospiojos .igual:hover {
+background: #a64038;
+border-color: #d16a58;
+box-shadow: 0 0 12px rgba(143, 48, 44, .35);
+}
+
+/* MEMORIA E HISTORIAL */
+
+body.tema-lospiojos .memoria-indicador,
+body.tema-lospiojos .historial,
+body.tema-lospiojos .historial-contenido {
+color: #e0ceb1;
+font-weight: 400;
+}
+
+/* MENÚ DE TEMAS */
+
+body.tema-lospiojos .temas-menu {
+background: #251b17;
+border: 1px solid #8f302c;
+}
+
+body.tema-lospiojos .temas-menu button {
+background: #352720;
+color: #f2e6d0;
+}
+
+body.tema-lospiojos .temas-menu button:hover {
+background: #59352c;
+}

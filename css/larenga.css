@@ -1,63 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+/* ========================================
+LA RENGA - RASTANAN
+Tipografía: Permanent Marker
+Paleta: negro, blanco y rojo
+======================================== */
 
-body.tema-larenga{
-    --fondo:#0b0b0b;
-    --panel:#151515;
-    --boton:#202020;
-    --funcion:#ffffff;
-    --operador:#c8102e;
-    --texto:#ffffff;
-    --secundario:#bdbdbd;
-    --borde:#c8102e;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* PALETA DEL TEMA */
+
+body.tema-larenga {
+--fondo: #0b0b0b;
+--panel: #151515;
+--boton: #202020;
+--funcion: #ffffff;
+--operador: #c8102e;
+--texto: #ffffff;
+--secundario: #bdbdbd;
+--borde: #c8102e;
 }
 
-body.tema-larenga .calculadora{
-    border:2px solid var(--operador);
-    border-radius:18px;
-    box-shadow:
-        0 0 0 1px #000,
-        0 20px 50px rgba(0,0,0,.7),
-        0 0 25px rgba(200,16,46,.12);
+/* TIPOGRAFÍA GENERAL */
+
+body.tema-larenga,
+body.tema-larenga button,
+body.tema-larenga input,
+body.tema-larenga select,
+body.tema-larenga .marca,
+body.tema-larenga .studio,
+body.tema-larenga .pantalla,
+body.tema-larenga .historial,
+body.tema-larenga .operacion,
+body.tema-larenga .resultado,
+body.tema-larenga .memoria-indicador,
+body.tema-larenga .historial-contenido {
+font-family: 'Permanent Marker', Impact, 'Arial Black', sans-serif;
 }
 
-body.tema-larenga .pantalla{
-    background:#090909;
-    border-bottom:2px solid var(--operador);
+/* CUERPO DE LA CALCULADORA */
+
+body.tema-larenga .calculadora {
+border: 2px solid var(--operador);
+border-radius: 18px;
+box-shadow:
+0 0 0 1px #000,
+0 20px 50px rgba(0, 0, 0, .7),
+0 0 25px rgba(200, 16, 46, .12);
 }
 
-body.tema-larenga .marca{
-    font-family:'Anton',Impact,'Arial Black',sans-serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    text-shadow:
-        2px 2px 0 #000,
-        4px 4px 0 var(--operador);
+/* PANTALLA */
+
+body.tema-larenga .pantalla {
+background: #090909;
+border-bottom: 2px solid var(--operador);
 }
 
-body.tema-larenga .studio{
-    color:var(--operador);
-    font-weight:700;
+/* MARCA RASTANAN */
+
+body.tema-larenga .marca {
+font-size: 28px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #fff;
+text-shadow:
+2px 2px 0 #000,
+4px 4px 0 #c8102e,
+0 0 12px rgba(200, 16, 46, .35);
 }
 
-body.tema-larenga button{
-    border-color:#333;
-    border-radius:12px;
+/* ARCAPIXELESSTUDIO */
+
+body.tema-larenga .studio {
+color: var(--operador);
+font-weight: 400;
 }
 
-body.tema-larenga .funcion{
-    color:#111;
-    background:#fff;
+/* RESULTADO NUMÉRICO */
+
+body.tema-larenga .resultado {
+font-size: inherit;
+font-weight: 400;
+letter-spacing: 1px;
+overflow-wrap: anywhere;
 }
+
+/* OPERACIÓN ACTUAL */
+
+body.tema-larenga .operacion {
+font-weight: 400;
+letter-spacing: .5px;
+}
+
+/* TODOS LOS BOTONES */
+
+body.tema-larenga button {
+border-color: #333;
+border-radius: 12px;
+font-weight: 400;
+letter-spacing: 0;
+}
+
+/* BOTONES DE FUNCIÓN */
+
+body.tema-larenga .funcion {
+color: #111;
+background: #fff;
+}
+
+/* OPERADORES Y SIGNO IGUAL */
 
 body.tema-larenga .operador,
-body.tema-larenga .igual{
-    background:var(--operador);
-    border-color:var(--operador);
+body.tema-larenga .igual {
+background: var(--operador);
+border-color: var(--operador);
+color: #fff;
 }
 
+/* EFECTO AL PASAR EL CURSOR */
+
 body.tema-larenga .operador:hover,
-body.tema-larenga .igual:hover{
-    background:#e01435;
-    border-color:#e01435;
-    box-shadow:0 0 12px rgba(200,16,46,.3);
+body.tema-larenga .igual:hover {
+background: #e01435;
+border-color: #e01435;
+box-shadow: 0 0 12px rgba(200, 16, 46, .3);
+}
+
+/* MEMORIA E HISTORIAL */
+
+body.tema-larenga .memoria-indicador,
+body.tema-larenga .historial,
+body.tema-larenga .historial-contenido {
+font-weight: 400;
 }
