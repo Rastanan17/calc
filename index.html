@@ -14,31 +14,54 @@
     <main class="calculadora">
 
         <header class="encabezado">
-            <span class="marca">Rastanan</span>
-            <span class="studio">by ArcaPixelesStudio</span>
+
+            <div class="marca-contenido">
+                <span class="marca">Rastanan</span>
+                <span class="studio">by ArcaPixelesStudio</span>
+            </div>
+
             <div class="selector-tema">
-                <button id="temaBtn" type="button">🎸 TEMA</button>
+                <button id="temaBtn" type="button">
+                    TEMA <span class="flecha">▾</span>
+                </button>
 
                 <div id="temasMenu" class="temas-menu">
-                    <button type="button" data-tema="larenga">La Renga</button>
                     <button type="button" data-tema="base">Clásico</button>
+                    <button type="button" data-tema="larenga">La Renga</button>
                 </div>
             </div>
+
         </header>
 
         <section class="pantalla">
             <div id="memoriaIndicador"></div>
             <div id="operacion"></div>
             <div id="resultado">0</div>
+
+            <button id="copiarResultado" type="button">
+                COPIAR
+            </button>
         </section>
 
         <section class="historial">
-            <div class="historial-titulo">
-                <span>Historial</span>
-                <button id="limpiarHistorial" type="button">Limpiar</button>
+
+            <button id="historialBtn" class="historial-boton" type="button">
+                <span>HISTORIAL</span>
+                <span id="historialFlecha">▾</span>
+            </button>
+
+            <div id="historialContenido" class="historial-contenido">
+
+                <div class="historial-acciones">
+                    <button id="limpiarHistorial" type="button">
+                        Limpiar
+                    </button>
+                </div>
+
+                <div id="historialLista"></div>
+
             </div>
 
-            <div id="historialLista"></div>
         </section>
 
         <section class="teclado">
