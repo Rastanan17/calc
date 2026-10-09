@@ -1,166 +1,19 @@
-/* ========================================
-GORILLAZ - RASTANAN
-Tipografía: Rock Salt
-Estética: ilustración alternativa / urbana
-======================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
-/* PALETA GORILLAZ */
-
-body.tema-gorillaz {
---fondo: #111313;
---panel: #1b201c;
---boton: #272e28;
---funcion: #c9f56a;
---operador: #8e68d7;
---texto: #f0f3e8;
---secundario: #aeb9a9;
---borde: #8bbd45;
-}
-
-/* TIPOGRAFÍA GENERAL */
-
-body.tema-gorillaz,
-body.tema-gorillaz button,
-body.tema-gorillaz input,
-body.tema-gorillaz select,
-body.tema-gorillaz .marca,
-body.tema-gorillaz .studio,
-body.tema-gorillaz .pantalla,
-body.tema-gorillaz .historial,
-body.tema-gorillaz .operacion,
-body.tema-gorillaz .resultado,
-body.tema-gorillaz .memoria-indicador,
-body.tema-gorillaz .historial-contenido {
-font-family: 'Rock Salt', 'Comic Sans MS', cursive;
-}
-
-/* CUERPO DE LA CALCULADORA */
-
-body.tema-gorillaz .calculadora {
-border: 2px solid #8bbd45;
-border-radius: 14px 4px 14px 4px;
-box-shadow:
-0 0 0 1px #050605,
-0 18px 45px rgba(0, 0, 0, .8),
-0 0 22px rgba(139, 189, 69, .16);
-}
-
-/* PANTALLA */
-
-body.tema-gorillaz .pantalla {
-background: #0b0e0c;
-border-bottom: 3px solid #8bbd45;
-}
-
-/* MARCA RASTANAN */
-
-body.tema-gorillaz .marca {
-font-size: 24px;
-font-weight: 400;
-letter-spacing: 0;
-color: #d5ff73;
-text-shadow:
-2px 2px 0 #101010,
-3px 3px 0 #6546a8;
-}
-
-/* ARCAPIXELESSTUDIO */
-
-body.tema-gorillaz .studio {
-color: #b59ae9;
-font-weight: 400;
-}
-
-/* RESULTADO */
-
-body.tema-gorillaz .resultado {
-color: #e9ffcc;
-font-weight: 400;
-letter-spacing: 0;
-overflow-wrap: anywhere;
-}
-
-/* OPERACIÓN */
-
-body.tema-gorillaz .operacion {
-color: #b6c7a6;
-font-weight: 400;
-}
-
-/* BOTONES */
-
-body.tema-gorillaz button {
-border: 1px solid #414a3d;
-border-radius: 8px 3px 8px 3px;
-font-weight: 400;
-letter-spacing: 0;
-transition:
-background .15s ease,
-border-color .15s ease,
-box-shadow .15s ease;
-}
-
-/* NÚMEROS */
-
-body.tema-gorillaz .teclado button {
-background: linear-gradient(145deg, #2c352d, #1a201b);
-color: #f0f3e8;
-}
-
-/* FUNCIONES */
-
-body.tema-gorillaz .funcion {
-background: #c9f56a;
-color: #172014;
-border-color: #e0ff9c;
-}
-
-/* OPERADORES E IGUAL */
-
-body.tema-gorillaz .operador,
-body.tema-gorillaz .igual {
-background: #7652bd;
-color: #fff;
-border-color: #a58ae5;
-}
-
-/* EFECTOS DE INTERACCIÓN */
-
-body.tema-gorillaz .teclado button:hover {
-border-color: #c9f56a;
-box-shadow: 0 0 9px rgba(201, 245, 106, .2);
-}
-
-body.tema-gorillaz .operador:hover,
-body.tema-gorillaz .igual:hover {
-background: #9270d8;
-border-color: #c3aff5;
-box-shadow: 0 0 12px rgba(142, 104, 215, .35);
-}
-
-/* MEMORIA E HISTORIAL */
-
-body.tema-gorillaz .memoria-indicador,
-body.tema-gorillaz .historial,
-body.tema-gorillaz .historial-contenido {
-color: #d7e6c8;
-font-weight: 400;
-}
-
-/* MENÚ DE TEMAS */
-
-body.tema-gorillaz .temas-menu {
-background: #1b201c;
-border: 1px solid #8bbd45;
-}
-
-body.tema-gorillaz .temas-menu button {
-background: #272e28;
-color: #f0f3e8;
-}
-
-body.tema-gorillaz .temas-menu button:hover {
-background: #39472f;
-}
+body.tema-gorillaz{--fondo:#111313;--panel:#1b201c;--boton:#272e28;--funcion:#c9f56a;--operador:#8e68d7;--texto:#f0f3e8;--secundario:#aeb9a9;--borde:#8bbd45}
+body.tema-gorillaz,body.tema-gorillaz button,body.tema-gorillaz input,body.tema-gorillaz select,body.tema-gorillaz .marca,body.tema-gorillaz .studio,body.tema-gorillaz .pantalla,body.tema-gorillaz .historial,body.tema-gorillaz .operacion,body.tema-gorillaz .resultado,body.tema-gorillaz .memoria-indicador,body.tema-gorillaz .historial-contenido{font-family:'Rock Salt','Comic Sans MS',cursive}
+body.tema-gorillaz .calculadora{border:2px solid #8bbd45;border-radius:14px 4px 14px 4px;box-shadow:0 0 0 1px #050605,0 18px 45px rgba(0,0,0,.8),0 0 22px rgba(139,189,69,.16)}
+body.tema-gorillaz .pantalla{background:#0b0e0c;border-bottom:3px solid #8bbd45}
+body.tema-gorillaz .marca{font-size:24px;font-weight:400;letter-spacing:0;color:#d5ff73;text-shadow:2px 2px 0 #101010,3px 3px 0 #6546a8}
+body.tema-gorillaz .studio{color:#b59ae9;font-weight:400}
+body.tema-gorillaz .resultado{color:#e9ffcc;font-weight:400;letter-spacing:0;overflow-wrap:anywhere}
+body.tema-gorillaz .operacion{color:#b6c7a6;font-weight:400}
+body.tema-gorillaz button{border:1px solid #414a3d;border-radius:8px 3px 8px 3px;font-weight:400;letter-spacing:0;transition:background .15s ease,border-color .15s ease,box-shadow .15s ease}
+body.tema-gorillaz .teclado button{background:linear-gradient(145deg,#2c352d,#1a201b);color:#f0f3e8}
+body.tema-gorillaz .funcion{background:#c9f56a;color:#172014;border-color:#e0ff9c}
+body.tema-gorillaz .operador,body.tema-gorillaz .igual{background:#7652bd;color:#fff;border-color:#a58ae5}
+body.tema-gorillaz .teclado button:hover{border-color:#c9f56a;box-shadow:0 0 9px rgba(201,245,106,.2)}
+body.tema-gorillaz .operador:hover,body.tema-gorillaz .igual:hover{background:#9270d8;border-color:#c3aff5;box-shadow:0 0 12px rgba(142,104,215,.35)}
+body.tema-gorillaz .memoria-indicador,body.tema-gorillaz .historial,body.tema-gorillaz .historial-contenido{color:#d7e6c8;font-weight:400}
+body.tema-gorillaz .temas-menu{background:#1b201c;border:1px solid #8bbd45}
+body.tema-gorillaz .temas-menu button{background:#272e28;color:#f0f3e8}
+body.tema-gorillaz .temas-menu button:hover{background:#39472f}

@@ -1,6 +1,11 @@
 Calculadora<
+    css<
+        gorillaz.css
+        larenga.css
+        lospiojos.css
+        metallica.css
+        style.css
     img<
         favicon.ico
     app.js
     index.html
-    style.css
